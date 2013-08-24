@@ -29,7 +29,7 @@ No. It only loads tiny css,image and js file(less than 40KB) in edit screen of p
 
 == Screenshots ==
 1. Click on Show DatePicker to display interactive calendar.
-2. http://s-plugins.wordpress.org/publish-date-datepicker/assets/screenshot-1.png
+2. http://s-plugins.wordpress.org/publish-date-datepicker/assets/banner-772x250.png
 
 == Changelog ==
 
