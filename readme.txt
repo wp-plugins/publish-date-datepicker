@@ -3,8 +3,8 @@ Contributors: vinod dalvi
 Donate link: http://profiles.wordpress.org/vinod-dalvi
 Tags: Publish Date, DatePicker, Interactive Calendar, Calendar
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 1.0.0
+Tested up to: 3.7
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ It makes adding and changing date easier by selecting it from interactive calend
 == Frequently Asked Questions ==
 
 = Does it cause to make site slow? =
-No. It only loads tiny css,image and js file(less than 40KB) in edit screen of post, page and custom post.
+No. It only loads tiny css,image and js file in edit screen of post, page and custom post.
 
 
 == Screenshots ==
@@ -33,10 +33,11 @@ No. It only loads tiny css,image and js file(less than 40KB) in edit screen of p
 
 == Changelog ==
 
-= 1.0.0 =
-Initial release
+= 2.0.0 =
+Added TimePicker support.
 
-== Upgrade Notice ==
+= 1.1.0 =
+Developed functionality to always display DatePicker.
 
 = 1.0.0 =
-Initial release
+Initial release.
