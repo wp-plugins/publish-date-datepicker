@@ -633,7 +633,7 @@
 	border-radius: 8px;
 }
 
-/* css for timepicker */
+/* CSS for TimePicker */
 .ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
 .ui-timepicker-div dl { text-align: left; }
 .ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
@@ -645,3 +645,8 @@
 .ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
 .ui-timepicker-rtl dl dt{ float: right; clear: right; }
 .ui-timepicker-rtl dl dd { margin: 0 45% 10px 10px; }
+
+/* CSS for Datepicker */
+#pddp_datepicker{
+	overflow: hidden;
+}

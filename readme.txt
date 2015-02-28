@@ -3,8 +3,8 @@ Contributors: vinod dalvi
 Donate link: http://profiles.wordpress.org/vinod-dalvi
 Tags: Publish Date, DatePicker, Interactive Calendar, Calendar
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 2.0.0
+Tested up to: 4.1.1
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ No. It only loads tiny css,image and js file in edit screen of post, page and cu
 2. http://s-plugins.wordpress.org/publish-date-datepicker/assets/banner-772x250.png
 
 == Changelog ==
+
+= 2.0.1 =
+Added hooks to control inclusion of plugin CSS and JS files.
+Added CSS to resolve the conflict issue.
 
 = 2.0.0 =
 Added TimePicker support.

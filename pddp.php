@@ -4,7 +4,7 @@ Plugin Name: Publish Date DatePicker
 Plugin URI: http://www.cupeltech.com/
 Description: Publish Date DatePicker adds interactive calendar in publish section of post, page & custom post.
 It makes adding and changing date easier by selecting it from interactive calendar using mouse.
-Version: 2.0.0
+Version: 2.0.1
 Author: Vinod Dalvi
 Author URI: http://www.cupeltech.com/
 License: GPLv2 or later
@@ -32,15 +32,20 @@ if ( !function_exists( 'add_action' ) ) {
 	exit;
 }
 
-define('PDDP_VERSION', '2.0.0');
+define('PDDP_VERSION', '2.0.1');
 define('PDDP_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 
 function load_pddp_admin_style_script($hook) {
 	if( 'post.php' != $hook && 'post-new.php' != $hook)
 		return;
-
-	wp_enqueue_script( 'timepicker-js', PDDP_PLUGIN_URL . 'js/jquery-ui-timepicker-addon.js', array( 'jquery-ui-datepicker' ) );
-	wp_enqueue_script( 'pddp-js', PDDP_PLUGIN_URL . 'js/pddp.js', array( 'timepicker-js' ) );
-	wp_enqueue_style( 'pddp-css', PDDP_PLUGIN_URL . 'css/pddp.css' );
+	if( apply_filters( 'add_pddp_timepicker_js', true ) ){
+		wp_enqueue_script( 'timepicker-js', PDDP_PLUGIN_URL . 'js/jquery-ui-timepicker-addon.js', array( 'jquery-ui-datepicker' ) );
+	}
+	if( apply_filters( 'add_pddp_js', true ) ){
+		wp_enqueue_script( 'pddp-js', PDDP_PLUGIN_URL . 'js/pddp.js', array( 'timepicker-js' ) );
+	}
+	if( apply_filters( 'add_pddp_css', true ) ){
+		wp_enqueue_style( 'pddp-css', PDDP_PLUGIN_URL . 'css/pddp.css' );
+	}
 }
 add_action( 'admin_enqueue_scripts', 'load_pddp_admin_style_script' );
